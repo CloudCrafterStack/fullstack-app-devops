@@ -1,0 +1,19 @@
+version: "3.9"
+      
+services:
+  backend:
+    build: ./backend
+    container_name: crud-backend
+    environment:
+      - APP_CORS_ORIGINS=*
+    ports:
+      - "8080:8080"
+
+  frontend:
+    build: ./frontend
+    container_name: crud-frontend
+    ports:
+      - "4200:80"
+    depends_on:
+      - backend
+
