@@ -1,5 +1,6 @@
 # --- Backend ---
 backend/target/
+backend/.mvnw.swp
 
 # --- Frontend ---
 frontend/node_modules/
@@ -9,7 +10,16 @@ frontend/.angular/
 # --- IDE ---
 .vscode/
 .idea/
+*.iml
+
+# --- OS ---
+.DS_Store
+Thumbs.db
 
 # --- Secrets ---
 .env
+.env.*
 *.pem
+*.key
+id_rsa*
+id_ed25519*
