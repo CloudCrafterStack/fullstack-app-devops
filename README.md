@@ -19,7 +19,7 @@ The demonstrates a **production-style DevOps pipeline** for a **Dockerized fulls
 
 ![DevOps Architecture](./docs/Devops-Architecture.png)
 
-### CI/CD Flow (Build & Push)
+### CI Flow (Build & Push)
 
 **Flow:**
 1. Developer pushes code to `main`
@@ -30,7 +30,7 @@ The demonstrates a **production-style DevOps pipeline** for a **Dockerized fulls
 
 ---
 
-### Deployment Flow (Continuous Deployment)
+### CD (Continuous Deployment)
 
 **Flow:**
 1. GitHub Actions connects to EC2 via SSH
@@ -56,6 +56,6 @@ The demonstrates a **production-style DevOps pipeline** for a **Dockerized fulls
 ├── docker-compose.prod.yml # Production deployment
 ├── docker-compose.dev.yml  # Dev environment
 ├── .github/workflows/
-│   └── cicd.yml              # CICD pipeline
+│   └── cicd.yml            # CICD pipeline
 └── README.md               
 
