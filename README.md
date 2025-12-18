@@ -55,5 +55,6 @@ The demonstrates a **production-style DevOps pipeline** for a **Dockerized fulls
 ├── docker-compose.dev.yml  # Dev environment
 ├── .github/workflows/
 │   └── cicd.yml            # CICD pipeline
+├── LICENCE                 # MIT Licence
 └── README.md               
 
