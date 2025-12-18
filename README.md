@@ -17,7 +17,7 @@ The demonstrates a **production-style DevOps pipeline** for a **Dockerized fulls
 
 ## High-Level Architecture
 
-![DevOps Architecture](./docs/Devops-Architecture.png)
+![DevOps-Architecture](./docs/Devops-Architecture.png)
 
 ### CI Flow (Build & Push)
 
@@ -37,7 +37,7 @@ The demonstrates a **production-style DevOps pipeline** for a **Dockerized fulls
 4. New containers are started via Docker Compose
 5. Application is live immediately
 
-![Application Flow](./docs/ApplicationFlow.png)
+![Application-Flow](./docs/ApplicationFlow.png)
 
 ---
 
