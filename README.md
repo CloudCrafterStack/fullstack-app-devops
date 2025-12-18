@@ -21,7 +21,6 @@ The demonstrates a **production-style DevOps pipeline** for a **Dockerized fulls
 
 ### CI Flow (Build & Push)
 
-**Flow:**
 1. Developer pushes code to `main`
 2. GitHub Actions checks out the repository
 3. Frontend & Backend Docker images are built
@@ -30,9 +29,8 @@ The demonstrates a **production-style DevOps pipeline** for a **Dockerized fulls
 
 ---
 
-### CD (Continuous Deployment)
+### CD Flow (Continuous Deployment)
 
-**Flow:**
 1. GitHub Actions connects to EC2 via SSH
 2. Existing containers are stopped
 3. Latest images are pulled from Docker Hub
