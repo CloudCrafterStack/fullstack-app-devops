@@ -1,4 +1,4 @@
-# Fullstack App – DevOps CI/CD Pipeline 🚀
+# Fullstack App – DevOps CI/CD Pipeline
 
 The demonstrates a **production-style DevOps pipeline** for a **Dockerized fullstack app** (Spring Boot + Angular), built and deployed automatically using **GitHub Actions**, **Docker Hub**, and **AWS EC2**.
 
