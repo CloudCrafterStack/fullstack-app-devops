@@ -1,16 +1,21 @@
-# Single-stage image that runs the app with Maven
-
-FROM maven:3.9-eclipse-temurin-21
-
+# =========================
+# ===== BUILD STAGE =====
+FROM maven:3.9-eclipse-temurin-21 AS build
 WORKDIR /app
 
-# Copy Maven config and sources
 COPY pom.xml .
 COPY src ./src
 
-# Expose Spring Boot port
-EXPOSE 8080
+# Build Spring Boot executable jar
+RUN mvn -q -DskipTests package
 
-# Run the app via Maven (like you do locally with ./mvnw spring-boot:run)
-CMD ["mvn", "spring-boot:run"]
+# ===== RUNTIME STAGE =====
+FROM eclipse-temurin:21-jre
+WORKDIR /app
+
+# Copy the built jar
+COPY --from=build /app/target/crud-spring-0.0.1-SNAPSHOT.jar app.jar
+
+EXPOSE 8080
+ENTRYPOINT ["java","-jar","/app/app.jar"]
 
